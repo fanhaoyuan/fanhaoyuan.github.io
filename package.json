@@ -5,6 +5,7 @@
     "author": "Jarvis <418536538@qq.com>",
     "license": "MIT",
     "gitHooks": {
+        "commit-msg": "node bin/cmv.js",
         "pre-commit": "lint-staged"
     },
     "lint-staged": {
@@ -16,6 +17,8 @@
         ]
     },
     "devDependencies": {
+        "chalk": "^4.1.1",
+        "yorkie": "^2.0.0",
         "lint-staged": "^10.5.4"
     }
 }
