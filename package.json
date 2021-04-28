@@ -1,0 +1,21 @@
+{
+    "name": "fanhaoyuan.github.io",
+    "private": true,
+    "repository": "https://github.com/fanhaoyuan/fanhaoyuan.github.io.git",
+    "author": "Jarvis <418536538@qq.com>",
+    "license": "MIT",
+    "gitHooks": {
+        "pre-commit": "lint-staged"
+    },
+    "lint-staged": {
+        "*.{js,md,json}": [
+            "prettier --write"
+        ],
+        "*.{js}": [
+            "eslint --fix"
+        ]
+    },
+    "devDependencies": {
+        "lint-staged": "^10.5.4"
+    }
+}
