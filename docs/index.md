@@ -3,7 +3,7 @@ home: true
 heroText: 学习笔记
 tagline: 记录学习的过程与经验
 actionText: 开始阅读
-actionLink: /article
+actionLink: /article/
 features:
     - title: 学习笔记
       details: 记录学习的过程
