@@ -41,9 +41,9 @@ jobs:
               run: sudo npm run build
 
             - name: Deploy for Docs
-              uses: stefanzweifel/git-auto-commit-action@v4
+              uses: JamesIves/github-pages-deploy-action@4.1.1
               with:
-                  commit_message: 'release: ✨✨✨Github Pages Deployment.🔖'
+                  commit-message: 'release: ✨✨✨Github Pages Deployment.🔖'
                   branch: docs
-                  file_pattern: docs/.vitepress/dist/*
-                  ACCESS_TOKEN: ${{ secrets.GH_TOKEN }}
+                  folder: docs/.vitepress/dist
+                  token: ${{ secrets.GH_TOKEN }}
