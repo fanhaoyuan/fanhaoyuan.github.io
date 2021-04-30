@@ -43,7 +43,7 @@ jobs:
             - name: Deploy for Docs
               uses: stefanzweifel/git-auto-commit-action@v4
               with:
-                  commit-message: 'release: ✨✨✨Github Pages Deployment.🔖'
+                  commit_message: 'release: ✨✨✨Github Pages Deployment.🔖'
                   branch: docs
-                  folder: docs/.vitepress/dist
+                  file_pattern: docs/.vitepress/dist/*
                   ACCESS_TOKEN: ${{ secrets.GH_TOKEN }}
