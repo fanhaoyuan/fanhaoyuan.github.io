@@ -38,7 +38,7 @@ jobs:
                   cmd: install
             #构建文档
             - name: Build for Docs
-              run: npm run build
+              run: sudo npm run build
 
             - name: Deploy for Docs
               uses: stefanzweifel/git-auto-commit-action@v4
