@@ -12,7 +12,7 @@ jobs:
         runs-on: ubuntu-latest
         strategy:
             matrix:
-                node-version: ['12']
+                node-version: '14'
         steps:
             #检出代码
             - name: Git Checkout
@@ -35,7 +35,7 @@ jobs:
                       ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
             #安装依赖（如果没有缓存）
             - name: Install Dependencies
-              uses: borales/actions-yarn@v2.0.0
+              uses: borales/actions-yarn@v2.3.0
               if: steps.yarn-cache.outputs.cache-hit != 'true'
               with:
                   cmd: install
