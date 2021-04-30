@@ -12,7 +12,7 @@ jobs:
         runs-on: ubuntu-latest
         strategy:
             matrix:
-                node-version: [12.x]
+                node-version: ['12']
         steps:
             #检出代码
             - name: Git Checkout
@@ -21,7 +21,7 @@ jobs:
                   ref: master
             #安装node环境
             - name: Use Node.js ${{ matrix.node-version }}
-              uses: actions/setup-node@v1
+              uses: actions/setup-node@v2
               with:
                   node-version: ${{ matrix.node-version }}
             #设置缓存
