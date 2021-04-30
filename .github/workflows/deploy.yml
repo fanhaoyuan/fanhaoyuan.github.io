@@ -10,9 +10,6 @@ jobs:
     #更新路由及更新日志
     update:
         runs-on: ubuntu-latest
-        strategy:
-            matrix:
-                node-version: '14'
         steps:
             #检出代码
             - name: Git Checkout
@@ -23,7 +20,7 @@ jobs:
             - name: Use Node.js ${{ matrix.node-version }}
               uses: actions/setup-node@v2
               with:
-                  node-version: ${{ matrix.node-version }}
+                  node-version: '14'
             #设置缓存
             - name: Set Dependencies Cache
               uses: actions/cache@v2
