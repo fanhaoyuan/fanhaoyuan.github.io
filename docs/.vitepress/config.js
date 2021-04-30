@@ -4,6 +4,7 @@ module.exports = {
     lang: 'zh-CN',
     themeConfig: {
         repo: 'https://github.com/fanhaoyuan/fanhaoyuan.github.io/',
+        docsDir: 'docs',
         branch: 'master',
         editLinks: true,
         editLinkText: '在GitHub上编辑此页面',
